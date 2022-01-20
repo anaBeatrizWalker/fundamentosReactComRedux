@@ -3,5 +3,5 @@ import ReactDOM from 'react-dom'
 import Componente from './component'
 
 ReactDOM.render(
-    <Componente/>, document.getElementById('app')
+    <Componente value='Usando propriedade'/>, document.getElementById('app')
 )

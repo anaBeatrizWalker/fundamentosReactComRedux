@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Componente from './component'
+import Segundo, { Primeiro } from './component'
 
 ReactDOM.render(
-    <Componente value='Usando propriedade'/>, document.getElementById('app')
+    //mais de um componente = precisa ser agrupado em uma div
+    <div>
+        <Primeiro/>
+        <Segundo/>
+    </div>
+    , document.getElementById('app')
 )

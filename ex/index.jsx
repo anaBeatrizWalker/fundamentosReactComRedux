@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Segundo, { Primeiro } from './component'
+import SilvaFamily from './silvaFamily'
 
 ReactDOM.render(
-    //mais de um componente = precisa ser agrupado em uma div
     <div>
-        <Primeiro/>
-        <Segundo/>
+        <SilvaFamily/>
     </div>
     , document.getElementById('app')
 )

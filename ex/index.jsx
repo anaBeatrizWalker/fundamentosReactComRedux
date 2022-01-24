@@ -4,15 +4,16 @@ import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import Field from './field'
+import fieldReducer from './fieldReducer'
 
 const reducers = combineReducers({
-    field: () => ({value: 'Teste'})
+    field: fieldReducer
 })
 
 ReactDOM.render(
     //criando store (objeto com todos os reducers)
     <Provider store={createStore(reducers)}> 
-        <Field initialValue='Mude o label'/>
+        <Field/>
     </Provider>
     , document.getElementById('app')
 )

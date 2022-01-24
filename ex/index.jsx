@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import Field from './field'
 
 const reducers = combineReducers({
-    field: () => ({value: 'Teste'}) //estado fixo
+    field: () => ({value: 'Teste'})
 })
 
 ReactDOM.render(
